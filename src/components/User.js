@@ -1,7 +1,9 @@
 import {usersService} from "../services/users.service";
+import {useForm} from "react-hook-form";
 
 export default function User({user, setUsers}) {
 
+    const {register, handleSubmit,setValue} = useForm({mode:"all"});
     const deleteUser = async () => {
         await usersService.deleteUserById(user.id);
         setUsers(users => {
@@ -12,7 +14,7 @@ export default function User({user, setUsers}) {
 
     }
     return (
-        <form>
+        <form onSubmit={() => deleteUser()}>
             <hr/>
             ID: {user.id},<br/>
             Name: {user.name},<br/>
