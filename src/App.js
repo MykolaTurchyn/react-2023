@@ -4,7 +4,7 @@ export default function App() {
             App
 <div>
     <p>
-        hello worldik
+        hello world
     </p>
 </div>
 
