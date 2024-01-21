@@ -6,6 +6,9 @@ export default function App() {
     <p>
         hello world
     </p>
+    <p>
+        Bye-bye
+    </p>
 </div>
 
         </div>
