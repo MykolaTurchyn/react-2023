@@ -5,7 +5,7 @@ import Comments from "./components/comments/Comments";
 export default function App() {
     return (
         <div>
-      <p>Hello</p>
+      <p>Hello world</p>
             <Users/>
             <Posts/>
             <Comments/>
